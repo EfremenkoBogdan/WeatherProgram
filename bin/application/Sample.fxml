@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <bottom>
+      <AnchorPane fx:id="backColor" prefHeight="430.0" prefWidth="276.0" style="-fx-background-color: CornflowerBlue;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="weatherUpprer" fill="WHITE" layoutX="32.0" layoutY="33.0" stroke="#2a73c7" strokeType="OUTSIDE" strokeWidth="2.0" text="Weather TODAY" textAlignment="CENTER" wrappingWidth="216.53668785095215">
+               <font>
+                  <Font name="Candara" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="infoTemp" fill="WHITE" layoutX="10.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature:" wrappingWidth="250.25391387939453">
+               <font>
+                  <Font name="Candara Light" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="infoFeels" fill="WHITE" layoutX="10.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fills like:" wrappingWidth="249.45392608642578">
+               <font>
+                  <Font name="Candara Light" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="infoMax" fill="WHITE" layoutX="9.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAX:" wrappingWidth="244.65393829345703">
+               <font>
+                  <Font name="Candara Light" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="infoMin" fill="WHITE" layoutX="8.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIN:" wrappingWidth="254.25391387939453">
+               <font>
+                  <Font name="Candara Light" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="infoPress" fill="WHITE" layoutX="9.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressure:" wrappingWidth="258.25391387939453">
+               <font>
+                  <Font name="Candara Light" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="cityField" alignment="CENTER" layoutX="28.0" layoutY="51.0" prefHeight="50.0" prefWidth="215.0" promptText="Write your city">
+               <font>
+                  <Font name="Candara Light" size="22.0" />
+               </font>
+            </TextField>
+            <Text fx:id="infoMiddle" fill="#faff9d" layoutX="33.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMATION" textAlignment="CENTER" wrappingWidth="214.9366455078125">
+               <font>
+                  <Font name="Candara Bold" size="31.0" />
+               </font>
+            </Text>
+            <Button fx:id="button" layoutX="51.0" layoutY="122.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="178.0" text="CLICK!" textFill="#111c79">
+               <font>
+                  <Font name="Candara" size="19.0" />
+               </font>
+            </Button>
+            <Text fx:id="infoWind" fill="WHITE" layoutX="9.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wind speed:" wrappingWidth="258.25391387939453">
+               <font>
+                  <Font name="Candara Light" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
